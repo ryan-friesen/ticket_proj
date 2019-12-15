@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login :: TicketApp</title>
+</head>
+
+<body>
+  <h1>
+    This page left intentionally blank.
+  </h1>
+  <p>
+    {{ msg }}
+  </p>
+  <div>
+
+    {% for ticket in tickets %}
+    <hr>
+    <div>
+      <p>
+        id:
+        <a href="/tickets/{{ ticket.id }}">
+          {{ ticket.id }}
+        </a>
+      </p>
+      <p>
+        submitted_by: {{ ticket.submitted_by }}
+      </p>
+      <p>
+        title: {{ ticket.title }}
+      </p>
+    </div>
+
+    {% endfor %}
+
+  </div>
+</body>
+
+</html>
