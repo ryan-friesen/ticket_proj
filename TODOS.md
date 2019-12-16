@@ -1,0 +1,1 @@
+- [django admin](https://docs.djangoproject.com/en/3.0/ref/contrib/admin/)
