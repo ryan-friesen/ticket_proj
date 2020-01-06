@@ -10,6 +10,21 @@
 
 <body>
   <p>Dashboard</p>
+
+  {% for user in all_users %}
+  <div>
+    <p>
+      First Name: {{user.first_name}}
+    </p>
+    <p>
+      Last Name: {{user.last_name}}
+    </p>
+    <p>
+      Email: {{user.email}}
+    </p>
+    <hr>
+  </div>
+  {% endfor %}
 </body>
 
 </html>
