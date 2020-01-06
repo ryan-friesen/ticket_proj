@@ -5,7 +5,6 @@ from . import views
 # NO LEADING SLASHES
 urlpatterns = [
     path('', views.index, name='index'),
-    path('guest/<str:guest_name>', views.guest, name='guest'),
-
-    path('tickets/<str:ticket_id>', views.ticket_info, name='ticket_info'),
+    path('users/register', views.register, name='register'),
+    path('users/dashboard', views.dashboard, name='dashboard'),
 ]
